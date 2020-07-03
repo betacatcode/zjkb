@@ -587,7 +587,7 @@ header.page-header .main-menu{
 	position: relative;
 }
 .navbar-brand img {
-	margin-top: 0px;
+	margin-top: 5px;
 }
 .main-menu .navbar-nav{
     float: right;
@@ -597,7 +597,7 @@ header.page-header .main-menu{
 	display:inline;
 }
 .main-menu .navbar-nav li a{
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
     color: #fff;
     padding-top: 6px;
@@ -627,6 +627,7 @@ header.page-header .main-menu{
 	padding: 0;
 	position: fixed;
 	border: none;
+	height: 80px;
 }
 
 header.page-header .main-menu.minified{
