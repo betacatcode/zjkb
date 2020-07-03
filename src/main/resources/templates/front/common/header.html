@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:fragment="header">
+    <header>
+        <nav id="topNav" class="navbar navbar-default main-menu minified">
+            <div class="container">
+                <button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse"
+                        data-target="#collapsingNavbar">
+                    ☰
+                </button>
+                <a class="navbar-brand page-scroll" href="#slider"><img class="logo" id="logo" src="/front/images/logo.png"
+                                                                        alt="logo"></a>
+                <div class="collapse navbar-toggleable-sm" id="collapsingNavbar">
+                    <ul class="nav navbar-nav">
+                        <!--class="active"-->
+                        <li >
+                            <a href="/front/index">首页</a>
+                        </li>
+                        <li>
+                            <a href="/front/about">公司概况/办公环境</a>
+                        </li>
+                        <li>
+                            <a href="/front/qualifications">公司资质</a>
+                        </li>
+                        <li>
+                            <a href="/front/works">作品案例</a>
+                        </li>
+
+                        <li>
+                            <a href="/front/recruit">诚聘英才</a>
+                        </li>
+
+                        <li>
+                            <a href="/front/contact">联系我们</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</div>
+</body>
+</html>

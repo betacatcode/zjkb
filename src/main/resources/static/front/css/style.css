@@ -580,14 +580,14 @@ section#services {
     -o-transition: all .35s;
     transition: all .35s;
     -webkit-backface-visibility: hidden;
-    border-bottom: #4e4e4e solid 1px;
+    /*border-bottom: #4e4e4e solid 1px;*/
 }
 
 header.page-header .main-menu{
 	position: relative;
 }
 .navbar-brand img {
-	margin-top: 10px;
+	margin-top: 0px;
 }
 .main-menu .navbar-nav{
     float: right;
@@ -618,12 +618,12 @@ header.page-header .main-menu{
 }
 
 .main-menu .navbar-nav li a:focus{
-	background-color: transparent;
+	background-color: #007cc3;
 }
 
  
 .main-menu.minified{
-	background-color: #232323;
+	background-color: #007cc3;
 	padding: 0;
 	position: fixed;
 	border: none;
@@ -1354,7 +1354,7 @@ header.page-header .main-menu.minified{
 }
 
 footer{
-	background-color: #111111;
+	background-color: #007cc3;
 	padding: 20px 15px;
 	overflow: hidden;
 }
@@ -1401,7 +1401,7 @@ footer ul li a i{
 	transition: all .3s;
 }
 .footer-container {
-	background-color: #111111;
+	background-color: #007cc3;
 	padding: 60px 30px;
 }
 .footer-containertent {

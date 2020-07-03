@@ -10,13 +10,13 @@ jQuery(window).load(function() {
 
 
 /* -------- Appears Menu ------ */
-	$(window).on('ready , scroll', function() {
+/*	$(window).on('ready , scroll', function() {
 	    if ($(window).scrollTop() > 30) {
 	        $('.main-menu').addClass('minified');
 	    } else {
 	        $('.main-menu').removeClass('minified');
 	    }
-	});
+	});*/
 
 /* ---------- Hide Menu-------- */
   jQuery(".nav a").on("click", function () {
@@ -61,21 +61,21 @@ $('#clients-carousel').owlCarousel({
 });
 
 /* --------- Scroll Up --------- */
-	$.scrollUp({
-		scrollName: 'scrollUp', // Element ID
-		scrollDistance: 300, // Distance from top/bottom before showing element (px)
-		scrollFrom: 'top', // 'top' or 'bottom'
-		scrollSpeed: 5000, // Speed back to top (ms)
-		easingType: 'linear', // Scroll to top easing (see http://easings.net/)
-		animation: 'fade', // Fade, slide, none
-		animationInSpeed: 200, // Animation in speed (ms)
-		animationOutSpeed: 200, // Animation out speed (ms)
-		scrollText: 'Scroll to top', // Text for element, can contain HTML
-		scrollTitle: false, // Set a custom <a> title if required. Defaults to scrollText
-		scrollImg: true, // Set true to use image
-		activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-		zIndex: 99998 // Z-Index for the overlay
-	});
+	// $.scrollUp({
+	// 	scrollName: 'scrollUp', // Element ID
+	// 	scrollDistance: 300, // Distance from top/bottom before showing element (px)
+	// 	scrollFrom: 'top', // 'top' or 'bottom'
+	// 	scrollSpeed: 5000, // Speed back to top (ms)
+	// 	easingType: 'linear', // Scroll to top easing (see http://easings.net/)
+	// 	animation: 'fade', // Fade, slide, none
+	// 	animationInSpeed: 200, // Animation in speed (ms)
+	// 	animationOutSpeed: 200, // Animation out speed (ms)
+	// 	scrollText: 'Scroll to top', // Text for element, can contain HTML
+	// 	scrollTitle: false, // Set a custom <a> title if required. Defaults to scrollText
+	// 	scrollImg: true, // Set true to use image
+	// 	activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+	// 	zIndex: 99998 // Z-Index for the overlay
+	// });
 
 /* ---------- lightbox ---------- */
 	$('.featured-work-img').magnificPopup({
