@@ -591,13 +591,13 @@ header.page-header .main-menu{
 }
 .main-menu .navbar-nav{
     float: right;
-    padding: 20px 0;
+    padding: 5px 0;
 }
 .main-menu .navbar-nav li{
 	display:inline;
 }
 .main-menu .navbar-nav li a{
-    font-size: 15px;
+    font-size: 15.5px;
     font-weight: 700;
     color: #fff;
     padding-top: 6px;
@@ -609,6 +609,7 @@ header.page-header .main-menu{
     transition: all .3s;
     padding: 15px;
     text-transform: uppercase;
+	background-color: #007cc3;
 }
 
 .main-menu .navbar-nav li a:hover,
@@ -1711,3 +1712,35 @@ footer ul li a i{
 
 }
 
+ul{
+	list-style: none;
+}
+.nav>li{
+	float: left;
+}
+ul a{
+	display: block;
+	text-decoration: none;
+}
+.nav>li:first-child a{
+	border-radius: 10px 0 0 10px;
+}
+.nav>li:last-child a{
+	border-radius: 0 10px 10px 0;
+}
+.drop-down{
+	/*position: relative;*/
+	height: 50px;
+	overflow: hidden;
+}
+.drop-down-content{
+	padding: 0;
+	/*position: absolute;*/
+}
+
+.drop-down-content li:hover a{
+	background-color: #1f7e9a;
+}
+.nav .drop-down:hover{
+	overflow: visible;
+}
