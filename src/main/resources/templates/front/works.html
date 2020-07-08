@@ -31,9 +31,9 @@
 
                 <!-- Section Header -->
                 <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
-                    <h2><span class="highlight-text">Works</span></h2>
+                    <h2><span class="highlight-text">作品案例</span></h2>
 
-                    <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque.</p>
+                    <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 word" id="intro"></p>
                 </div>
                 <!-- Section Header End -->
 
@@ -47,11 +47,9 @@
             <div id="portfolio-filter" class="portfolio-filter-btn-group">
                 <ul>
                     <li>
-                        <a href="#" class="selected" data-filter="*">ALL</a><!--
-                         --><a href="#" data-filter=".web">WEB</a><!--
-                         --><a href="#" data-filter=".seo">SEO</a><!--
-                         --><a href="#" data-filter=".works">WORKS</a><!--
-                         --><a href="#" data-filter=".brands">BRANDS</a>
+                        <a href="#" class="selected" data-filter="*" onclick="introduce(0)">所有的</a>
+                        <a href="#" data-filter=".web" onclick="introduce(1)">澉浦护城河</a>
+                        <a href="#" data-filter=".seo" onclick="introduce(2)">田园路</a>
                     </li>
                 </ul>
             </div>
@@ -60,7 +58,7 @@
             <div class="portfolio-items">
 
                 <!-- Portfolio Items -->
-                <div class="item portfolio-item web seo">
+                <div class="item portfolio-item web">
 
                     <img src="/front/images/img-portfolio/portfolio1.jpg" alt="">
                     <div class="portfolio-details-wrapper">
@@ -72,12 +70,11 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <!-- Portfolio Items End -->
 
                 <!-- Portfolio Items -->
-                <div class="item portfolio-item works seo">
+                <div class="item portfolio-item web">
 
                     <img src="/front/images/img-portfolio/portfolio2.jpg" alt="">
                     <div class="portfolio-details-wrapper">
@@ -89,12 +86,11 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <!-- Portfolio Items End -->
 
                 <!-- Portfolio Items -->
-                <div class="item portfolio-item web">
+                <div class="item portfolio-item seo">
 
                     <img src="/front/images/img-portfolio/portfolio3.jpg" alt="">
                     <div class="portfolio-details-wrapper">
@@ -106,12 +102,11 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <!-- Portfolio Items End -->
 
                 <!-- Portfolio Items -->
-                <div class="item portfolio-item web works brands">
+                <div class="item portfolio-item seo">
 
                     <img src="/front/images/img-portfolio/portfolio4.jpg" alt="">
                     <div class="portfolio-details-wrapper">
@@ -124,77 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Portfolio Items -->
-
-                <!-- Portfolio Items -->
-                <div class="item portfolio-item web brands">
-
-                    <img src="/front/images/img-portfolio/portfolio5.jpg" alt="">
-                    <div class="portfolio-details-wrapper">
-                        <div class="portfolio-details">
-                            <div class="portfolio-meta-btn">
-                                <ul class="work-meta">
-                                    <li class="lighbox"><a href="/front/images/img-portfolio/portfolio5.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
                 <!-- Portfolio Items End -->
-
-                <!-- Portfolio Items -->
-                <div class="item portfolio-item works seo">
-
-                    <img src="/front/images/img-portfolio/portfolio6.jpg" alt="">
-                    <div class="portfolio-details-wrapper">
-                        <div class="portfolio-details">
-                            <div class="portfolio-meta-btn">
-                                <ul class="work-meta">
-                                    <li class="lighbox"><a href="/front/images/img-portfolio/portfolio6.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- Portfolio Items End -->
-
-                <div class="item portfolio-item brands seo">
-
-                    <img src="/front/images/img-portfolio/portfolio1.jpg" alt="">
-                    <div class="portfolio-details-wrapper">
-                        <div class="portfolio-details">
-                            <div class="portfolio-meta-btn">
-                                <ul class="work-meta">
-                                    <li class="lighbox"><a href="/front/images/img-portfolio/portfolio7.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- Portfolio Items End -->
-
-                <!-- Portfolio Items -->
-                <div class="item portfolio-item web seo works">
-
-                    <img src="/front/images/img-portfolio/portfolio2.jpg" alt="">
-                    <div class="portfolio-details-wrapper">
-                        <div class="portfolio-details">
-                            <div class="portfolio-meta-btn">
-                                <ul class="work-meta">
-                                    <li class="lighbox"><a href="/front/images/img-portfolio/portfolio8.jpg" class="featured-work-img"><i class="fa fa-search-plus"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- Portfolio Items End -->
-
-
-
             </div>
         </div>
         <!-- Works End -->
@@ -223,6 +148,21 @@
     <script src="/front/contact/jqBootstrapValidation.js"></script>
     <script src="/front/contact/contact_me.js"></script>
     <script src="/front/js/custom.js"></script>
+    <script type="text/javascript">
+        var intros=[]
+        intros[0]=""
+        intros[1]="项目名称：澉浦镇跨护城河桥梁（南门桥）工程<br>" +
+            "项目地址：嘉兴市海盐县澉浦镇南浦路<br>" +
+            "设计时间：2020年04月<br>" +
+            "项目简介：南浦路位于村道C327（东门桥～澉浦中学）上，是澉浦古镇连接澉浦新市镇的一条重要通道。南浦路在肃武门公园西侧跨越现状护城河，桥位处河道宽约33～36米，需新建桥梁一座，即南门桥。桥梁西起规划星光大道，东至现状肃武门公园、澉浦城墙。桥位西侧现状南浦路为10米宽水泥路面，桥位东侧肃武门公园已改造完成，单向路面宽4.5米的沥青路。";
+        intros[2]="项目名称：澉浦镇C333田园路工程<br>" +
+            "项目地址：嘉兴市海盐县澉浦镇<br>" +
+            "设计时间：2020年04月<br>" +
+            "项目简介：本项目与X331翁金线十字交叉口处，设计起点桩号K0+000，路线走向由北向南，终点位于本项目与南北湖（澉浦）大道十字交叉口处，设计终点桩号K1+979，路线全长1.979km；沿线新建小桥1座，中桥1座，共计桥梁2座。";
+        function introduce(type) {
+            $("#intro").html(intros[type])
+        }
+    </script>
 
 </body>
 </html>
